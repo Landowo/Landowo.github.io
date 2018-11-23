@@ -68,7 +68,7 @@
 	<body bgcolor="#080808">
 		<div class="parent">
 			<div class="item">
-				 <img style="float: left; margin: 10px;" src="logo.png" height="135"> 
+				 <img id='random' style="float: left; margin: 10px;" src="logo.png" height="135">
 			</div>
 				<div class="item">
 					<p><font color="f3f3f3">why wont lando fucking upload</font></p>
@@ -80,7 +80,23 @@
 					<p><font color="f3f3f3">// </font><a href="" onclick="copyToClipboard(myInput);event.preventDefault();"><font color="f3f3f3">minecraft</font></a></p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+var image = new Array ();
+image[0] = "logo.png";
+image[1] = "logo.png";
+image[2] = "logo.png";
+image[3] = "logo1.jpg";
+image[4] = "logo2.jpg";
+image[5] = "logo3.jpg";
+image[6] = "logo4.jpg";
+image[7] = "logo1.png";
+image[8] = "logo2.png";
+image[9] = "thicc.gif";
+var size = image.length
+var x = Math.floor(size*Math.random())
 
+$('#random').attr('src',image[x]);
+</script>
 <script>
 function copyToClipboard(element) {
   var $temp = $("<input>");
